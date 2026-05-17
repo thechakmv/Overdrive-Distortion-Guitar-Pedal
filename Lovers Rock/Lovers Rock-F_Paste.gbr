@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,7.0.8*%
+%TF.CreationDate,2026-05-16T21:21:15-07:00*%
+%TF.ProjectId,Lovers Rock,4c6f7665-7273-4205-926f-636b2e6b6963,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Paste,Top*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 7.0.8) date 2026-05-16 21:21:15*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10R,2.000000X3.000000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,BT1*%
+X122800000Y-41595000D03*
+X116800000Y-41595000D03*
+X116800000Y-30595000D03*
+X122800000Y-30595000D03*
+%TD*%
+M02*
