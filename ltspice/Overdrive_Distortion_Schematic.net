@@ -1,0 +1,58 @@
+* C:\Users\theac\OneDrive\Documents\GitHub\Overdrive-Distortion-Guitar-Pedal\ltspice\Overdrive_Distortion_Schematic.asc
+XU1 N012 N007 Vpow 0 N007 LT1001
+V1 Vs 0 SINE(0 50m 1K) AC 1
+Cin N012 Vs 100nF
+R1 Vpow N012 1Meg
+R2 N012 0 1Meg
+Rout N011 N007 470
+C1 Vin N011 100nF
+XU2 Vin N004 Vpow 0 N006 LT1001
+R§Pot1 N006 N005 500K
+R4 N001 N004 4.7K
+D1 N004 N006 1N4148
+D2 N006 N004 1N4148
+C2 Vref N001 47nF
+C3 N006 N004 51pF
+R3 N005 N004 51K
+XU3 N009 N002 Vpow 0 N003 LT1001
+C4 Vod N013 100nF
+C5 N003 N002 470pF
+R7 N003 N002 500K
+D3 Vds Vref 1N4148
+D4 Vref Vds 1N4148
+R5 N013 N006 470
+R6 N009 Vref 1Meg
+Rpull] 0 Vs 1Meg
+R8 N002 Vod 1K
+V2 Vpow 0 9V
+R10 Vpow Vref 1Meg
+R11 Vref 0 1Meg
+C6 Vref 0 47µ
+C7 Vref 0 100n
+R12 Vtt N010 20K
+C8 N008 Vds 10n
+C9 Vtt N008 10n
+R13 N008 Vref 10K
+C10 N010 Vref 20n
+R14 Vds N003 10K
+R9 N010 Vds 20K
+C11 Vtc Vref 22n
+R17 Vtc Vtt 1K
+XU4 N017 N015 Vpow 0 N015 LT1001
+R18 Vtc Vref 100K
+C12 N017 Vtc 100nF
+R19 Vref N015 1Meg
+C13 Vout N016 1µ
+R20 Vout 0 1Meg
+R21 N016 N015 470
+C14 Vpow 0 100nF
+C15 Vpow 0 100µF
+.model D D
+.lib C:\Users\theac\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.dio
+* Overdrive Stage
+* Distortion Stage
+* Tone/Volume Control
+.tran 8m
+.lib LTC.lib
+.backanno
+.end
